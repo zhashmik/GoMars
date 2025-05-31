@@ -1,0 +1,85 @@
+/* Home.css */
+
+.home-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+  min-height: 100vh;
+  color: white;
+  overflow: hidden;
+}
+
+.home-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
+
+.home-heading {
+  font-size: 4rem;
+  font-weight: 800;
+  background: linear-gradient(to right, #8f3c02, #f4ed86);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  z-index: 10;
+  animation: pulse 2s infinite;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+.home-subheading {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  max-width: 48rem;
+  text-align: center;
+  z-index: 10;
+  color: #b7babe;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.cta-button {
+  margin-top: 2.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  background-color: #f97316;
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  animation: bounce 2s infinite;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.cta-button:hover {
+  background-color: #ea580c;
+}
+
+.feature-tags {
+  margin-top: 5rem;
+  font-size: 0.875rem;
+  color: #e5e7eb;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Animations */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
