@@ -9,7 +9,6 @@ Built with a **React frontend** and a **Node.js + Express backend**, this app de
 ## Live Demo
 
 - Frontend: https://go-mars-apcp.vercel.app/home
-- 
 - Backend: https://gomarsbackend.onrender.com
 
 ---
