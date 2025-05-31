@@ -9,6 +9,6 @@ const router = require('express').Router();
 // //     res.send('signup success');
 // // });
 
-router.post('/personalInfo',personalInfoValidation,personalInfo);
+router.post('/Info',personalInfoValidation,personalInfo);
 
 module.exports=router;

@@ -1,6 +1,7 @@
 const mongoose=require('mongoose');
 const Schema=mongoose.Schema;
 const userSchema=new Schema({
+    // Stage 1: Personal Information
     firstName:{
         type:String,
         required: true,
@@ -29,6 +30,39 @@ const userSchema=new Schema({
         required: true,
     //  trim: true,
     //  match: [/^\d{10,15}$/, 'Invalid phone number format']
+    },
+      // Stage 2: Travel Preferences
+    departureDate: {
+        type: Date,
+        required: true
+    },
+    returnDate: {
+        type: Date,
+        required: true
+    },
+    accommodation: {
+        type: String,
+        enum: ['Space Hotel', 'Martian Base'],
+        required: true
+    },
+    specialRequests: {
+        type: String,
+        default: ''
+    },
+
+    // Stage 3: Health and Safety
+    healthDeclaration: {
+        type: String,
+        enum: ['Yes', 'No'],
+        required: true
+    },
+    emergencyContact: {
+        type: String,
+        required: true
+    },
+    medicalConditions: {
+        type: String,
+        default: ''
     }
 
 });
