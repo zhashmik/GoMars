@@ -1,0 +1,15 @@
+document on how i create this form to mars
+
+First craete a folder with the name of your app and then inside that folder create a folder backend. 
+
+In VS code check if your current directory si set to your folder
+
+Then inside vs code in the terminal type npx create-react-app frontend.
+
+After that change the current directory to frontend
+
+and then in terminal write npm start, after this it will automatically take you to the browser 
+
+After that change the cd to backend,  then in terminal type npm init -y   ( to initialize teh backend project) 
+
+Then in the teminal install the depenedencies by typing: npm i express jsonwebtoken bcrypt body-parser dotenv mongoose joi cors
