@@ -57,7 +57,7 @@ function Info() {
 
     // Final Submit
     try {
-      const response = await fetch("http://localhost:8080/auth/Info", {
+      const response = await fetch("https://gomarsbackend.onrender.com/auth/Info", {
         method: "POST",
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
